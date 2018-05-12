@@ -1,0 +1,679 @@
+/* #region Reset CSS */
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+/* #endregion */
+
+/* #region Base CSS */
+    /* #region Colors */
+        .white{background: white;}
+        .black{background: black;}
+        .blue{background: #02b3e4}
+
+        .primary{background: #02d1bf}
+        .second{background: #aa7ecd}
+
+        .text-blue{color: #02b3e4;}
+        .text-pink{color: #ff5483;}
+        .text-purple{color: #a951ed;}
+        .text-green{color: #15c26b;}
+
+    /* #endregion */
+    
+    /* #region buttons */
+        .btn{
+            font-size: .825rem;
+            padding: .7em 1.2em !important;
+            font-weight: 400;
+            box-shadow: 2px 4px 6px 0px rgba(46,61,73,.2);
+            color: #fff !important;
+            border: 1px solid #02d1bf;
+            border-radius: 4px;
+            background: #02d1bf;
+            transition: all ease-in-out .2s;
+            display: inline-table !important;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn:hover{
+            background: #03dac8;
+            box-shadow: 1px 2px 5px 1px rgba(46,61,73,.1);
+        }
+        .btn-large{
+            text-transform: uppercase;
+            padding: 1em 7em !important;
+            border-radius: 5px;
+            letter-spacing: .1em;
+            font-weight: 600;
+        }
+
+
+        /* #region colors buttons */
+        .btn-light{
+            background: #fff !important;
+            color: #02b3e4 !important;
+            border: 1px solid #ddd;
+            
+        }
+        .btn-blue{
+            background: #02b3e4;
+            color: #fff;
+        }
+        .btn-blue:hover{
+            background: #0294bd;
+        }
+        .btn-outline-blue{
+            background: transparent;
+            border: 1px solid #02b3e4;
+            color: #02b3e4 !important;
+        }
+        .btn-outline-blue:hover{
+            background: #02b3e4;
+            color: #fff !important;
+        }
+        /* #endregion */
+    /* #endregion */
+
+    /* #region tamanhos e alinhamentos */
+    .container{
+        width: 74rem;
+        max-width: 74rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    .row{
+        display: flex;
+        margin-bottom: .5em;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .right{
+        position: absolute;
+        right: 0;
+    }
+    .titulo{
+        text-align: center;
+    }
+    .text-upper{
+        text-transform: uppercase;
+    }
+    .text-cap{
+        text-transform: capitalize;
+    }
+    .text-lower{
+        text-transform: lowercase;
+    }
+    /* #endregion */
+
+    /* #region navbar */
+    nav.navbar ul.navbar-wrapper li{
+        display: inline-block;
+        margin-left: 1.3em;
+    }
+
+    nav.navbar ul.navbar-wrapper li a{
+        display: block;
+        padding: .3em .5em;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+        transition: all ease-in-out .2s;
+    }
+    
+    nav.navbar ul.navbar-wrapper li a:hover{
+        color: #eaeaea;
+    }
+
+
+    nav ul.navbar-wrapper li .divider{
+        position: absolute;
+        content: "";
+        width: .1em;
+        height: 60%;
+        top: 20%;
+    }
+
+    nav.carousel ul{
+        display: flex;
+        align-items: center;
+    }
+
+    nav.carousel ul li{
+        max-width: 94%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    nav.carousel ul li:first-child{
+        width: 5%;
+        max-width: 2%;
+    }
+
+    nav.carousel ul li:last-child{
+        width: 5%;
+        max-width: 2%;
+    }
+    /* #endregion */
+
+    /* #region cards */
+    .card{
+        width: 100%;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 4px 4px 12px 1px rgba(46, 61, 123, .1);
+        margin-bottom: 2em;
+    }
+    .card a{
+        text-decoration: none;
+        color: #333;
+    }
+    .card .card-content{
+        display: flex;
+        position: relative;
+    }
+    .card .card-content .icon img{
+        width: 120px;
+        padding: 0 .6em;
+        border-radius: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card .card-content .conteudo{
+        padding: .5em 0;
+        width: 100%;
+        margin: 1em 0;
+        position: relative;
+    }
+    .card .card-content .categoria{
+        text-transform: uppercase;
+        font-size: .7em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1em;
+    }
+    .card .card-content .title{
+        font-size: .925em;
+        width: 70%;
+        color: #333;        
+    }
+    /* #endregion */
+/* #endregion */
+
+/* #region Main #content_topo */
+    main#content_topo{
+        background: linear-gradient(166deg,#02ccba 0%, #aa7ecd 55%,#fff 55%);
+        height: 42rem;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    /* #region .content */
+    main#content_topo .content{
+        width: 100%;
+        max-width: 100%;
+        padding: 2em 0;
+    }
+
+    /* #region Destaque */
+    main#content_topo .content .destaque{
+        max-width: 66%;
+        width: 100%;
+        background: url('../img/foundationsweek.jpg') 100% center no-repeat;
+        height: 30rem;
+        border-radius: 6px;
+        position: relative;
+        margin-right: 3.50em;
+    }
+    main#content_topo .content .destaque a{
+        color: #fff;
+        text-decoration: none;        
+    }
+    main#content_topo .content .destaque .conteudo{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(46, 61, 123, .1);
+    }
+
+    main#content_topo .content .destaque .conteudo div{
+        width: 83%;
+        margin: 0 auto;
+    }
+
+    main#content_topo .content .destaque .conteudo div .titulo{
+        font-weight: lighter;
+        margin-top: -.5em;
+        margin-bottom: .2em;
+    }
+
+    main#content_topo .content .destaque .conteudo div .descricao{
+        margin-bottom: 1.5em;
+        line-height: 2em;
+    }    
+    /* #endregion */
+
+        /* #region Lista lateral */
+    main#content_topo .content .lista{
+        max-width: 30%;
+        width: 30%;
+    }
+
+    main#content_topo .content .lista .card:nth-child(1) .categoria{color: #ecc81a;}
+    main#content_topo .content .lista .card:nth-child(2) .categoria{color: #ffa234;}
+    main#content_topo .content .lista .card:nth-child(3) .categoria{color: #02ccba;}
+    /* #endregion */
+    
+        /* #region parceiros */
+        main#content_topo .content .parceiros{
+            margin: 0 auto;
+            padding: 1em 0 2em 0;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            text-align: center;
+        }
+
+        main#content_topo .content .parceiros img{
+            margin: 0 1em;
+            max-height: 3.75rem;
+        }
+        /* #endregion */
+
+    /* #endregion */
+
+/* #endregion */
+
+/* #region sections*/
+    section{
+        padding: 2em 0;
+    }
+
+    /* #region section #comunidade */
+        section#comunidade h2.titulo{
+            font-size: .8125em;
+            color: rgb(45, 44, 49);
+            letter-spacing: .125em;
+            margin: 2em 0em 2.2em 0em;
+            text-transform: uppercase;
+        }
+        
+        section#comunidade nav.carousel ul li.comentario{
+            margin: 0 auto;
+        }
+
+        section#comunidade nav.carousel ul li.comentario .info{
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        section#comunidade nav.carousel ul li.comentario .info .texto{
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+            text-align: center;
+            margin-bottom: 1em;
+            color: #444;
+        }
+
+        section#comunidade nav.carousel ul li.comentario .info .aluno{
+            font-weight: bold;
+            text-transform:uppercase;
+            font-size: .825rem;
+            letter-spacing: .1rem;
+            position: relative;
+            display: inline-table;
+            margin: 0 auto;
+        }
+
+        section#comunidade nav.carousel ul li.comentario .info .aluno:before{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 1px;
+            top: 50%;
+            background: #333;
+            left: -25px;
+        }
+
+        section#comunidade img.alunos{
+            margin: 3.5rem auto;
+            display: block;
+        }
+        
+    /* #endregion */
+
+    /* #region section #cards */
+        section#cards .buttons a{
+            font-size: .7em;
+            font-weight: 500;
+            padding: .8em 1.2em;
+            margin: 0em .5em 1em .5em;
+            box-shadow: none;
+        }
+        section#cards .localcards{
+            margin-top: 2em;
+            max-width: 100%;
+        }
+        section#cards .card{
+            width: 350px;
+            max-width: 350px;
+            height: 365px;
+            max-height: 365px;
+            box-shadow: 5px 5px 23px 0px rgba(46, 61, 123, .25);
+            border-radius: 5px;
+            transition: all ease-in-out .3s;
+            margin-right: 2em;
+            margin-left: 2em;
+            position: relative;
+        }
+        section#cards .localcards .card:first-child{
+            margin-right: 2em;
+            margin-left: 0;
+        }
+        section#cards .localcards .card:last-child{
+            margin-right: 0;
+            margin-left: 2em;
+        }
+        section#cards .card:hover{
+            box-shadow: 2px 1px 15px 0px rgba(46, 61, 123, .25);
+        }
+        section#cards .card .card-header{
+            position: relative;
+            overflow: hidden;
+            height: 170px;
+            width: 350px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        section#cards .card .card-header:after{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+        }
+        section#cards .card .card-header.novo:before{
+            content: "NOVO!";
+            position: absolute;
+            background: #fff !important;
+            width: auto;
+            height: auto;
+            z-index: 2;
+            color: rgba(0, 183, 255, .8);
+            font-weight: bold;
+            font-size: .8em;
+            letter-spacing: .24em;
+            padding: .2em .3em;
+            left: 1em;
+            top: 1em;
+            box-shadow: 2px 2px 5px 1px rgba(46, 61, 123, .1);
+            border-radius: 2px;
+        }
+
+        section#cards .row:nth-child(1){
+            margin-bottom: 3em;
+        }
+
+        section#cards .row:nth-child(1) .card:nth-child(1) .card-header:after{background: rgba(0, 183, 255, .8);}
+        section#cards .row:nth-child(1) .card:nth-child(2) .card-header:after{background: rgba(0, 255, 221, .7);}
+        section#cards .row:nth-child(1) .card:nth-child(3) .card-header:after{background: rgba(162, 0, 255, 0.8);}
+
+        section#cards .row:nth-child(2) .card:nth-child(1) .card-header:after{background: rgba(143, 143, 143, 0.8);}
+        section#cards .row:nth-child(2) .card:nth-child(2) .card-header:after{background: rgba(255, 208, 0, 0.7);}
+        section#cards .row:nth-child(2) .card:nth-child(3) .card-header:after{background: rgba(255, 95, 194, 0.8);}
+
+        section#cards .card .card-header img{
+            width: 400px;
+            height: 200px;
+        }
+        section#cards .card .card-content{
+            padding: 1.5em 1.8em;
+            display: table !important;
+        }
+        section#cards .card .card-content p.idioma{
+            display: flex;
+            align-items: center;
+        }
+        section#cards .card .card-content p.idioma:before{
+            content: "IDIOMA: ";
+            margin-right: .5em;
+            font-size: .625em;
+        }
+        section#cards .card .card-content p.idioma img{
+            width: 13px;
+            margin-right: 1px;
+        }
+        section#cards .card .card-content h3{
+            color: #333;
+            font-size: 1.5em;
+            text-align: left;
+            font-weight: 400;
+            margin-top: .3em;
+        }
+        section#cards .card .card-footer{
+            max-width: 350px;
+            width: 350px;
+            position: absolute;
+            bottom: 0;
+            padding: .5em 0;
+        }
+        section#cards .card .card-footer img{
+            max-height: 2.25rem;
+            margin-left: 1em;
+            
+        }
+    /* #endregion*/
+
+    /* #region section #futuro */
+        section#futuro{
+            background: linear-gradient(to bottom right, #02b3e4, #02ccba);
+            padding: 4em 0;
+        }
+        section#futuro .content{
+            background: #fff;
+            width: 100%;
+            max-width: 71%;
+            margin: 0 auto;
+            padding: 4em;
+            border-radius: 6px;
+            box-shadow: 2px 3px 5px 0px rgba(46, 61, 123, .25);
+        }
+        section#futuro .content .row{
+            align-items: center;
+        }
+        section#futuro .content .paragrafo{
+            width: 55%;
+            margin-left: 2em;
+        }
+        section#futuro .paragrafo .titulo{
+            text-align: left;
+            font-weight: lighter;
+            font-size: 1.8em;
+            color: #02b3e4;
+            margin-bottom: .5em;
+        }
+        section#futuro .paragrafo p{
+            color: #888;
+            line-height: 1.7em;
+        }
+        section#futuro a.btn{
+            font-size: .9em;
+            letter-spacing: 1px;
+            font-weight: 600;
+            padding: 1em 5.2em !important;
+            margin-left: .8em;
+        }
+    /* #endregion*/
+
+    /* #region section #sobre */
+        section#sobre{
+            padding: 4em 0;
+        }
+        section#sobre h2.titulo{
+            font-weight: lighter;
+            font-size: 2em;
+        }
+        section#sobre .row{
+            margin-top: 5rem;
+        } 
+
+        section#sobre .row:not(:last-child){
+            margin-bottom: 12rem;
+        }
+
+        section#sobre .row .content{
+            position: relative;
+        }
+        section#sobre .row .content [class ^= "content-"]{
+            width: 47%;
+            max-width: 47%;
+        }
+        section#sobre .row .content .content-left{
+            float: left;
+            padding-left: 6em;
+            width: 35%;
+        }
+        section#sobre .row .content .content-right{
+            float: right;
+            width: 70%;
+        }
+
+        section#sobre .row .content .text .icon{
+            display: inline-flex;
+            width: 80px;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 100%;
+            background: #fff;
+            box-shadow: 2px 2px 15px 0 rgba(46, 61, 123, .25);
+        }
+
+        section#sobre .row .content .text .titulo{
+            font-size: 1.7em;
+            text-align: left;
+            margin: 1em 0 .5em 0;
+        }
+        section#sobre .row .content .text p{
+            color: #777;
+            font-size: .95em;
+            line-height: 1.5em;
+        }
+
+        section#sobre .row .content .images{
+            position: relative;
+            text-align: right;
+        }
+
+        section#sobre .row .content .images img{
+            max-height: 240px;
+            max-width: 330px;
+        }        
+
+        section#sobre .row .content .images img:first-child{
+            margin-right: 3em;
+        }
+        section#sobre .row .content [class $= 'right'] .images img:last-child{
+            position: absolute;
+            left: 0;
+            top: 60%;
+        }
+        section#sobre .row .content [class $= 'left'] .images img:last-child{
+            position: absolute;
+            right: 0;
+            top: 60%;
+        }
+
+        section#sobre .row.cards{
+            padding-top: 4em;
+        }
+
+        section#sobre .card{
+            max-width: 49%;
+            height: 190px;
+            background: #fff;
+            box-shadow: 4px 4px 25px 0px rgba(46,61,73,.2);
+            display: flex;
+            align-items: center;
+            transition: all ease-in-out .3s;
+            position: relative;
+        }
+        section#sobre .card:hover{
+            box-shadow: 2px 2px 10px 0px rgba(46,61,73,.2);
+        }
+
+        section#sobre .row .card:last-child{
+            right: 0;
+            position: absolute;
+        }
+
+        section#sobre .card .card-content{
+            padding: 2em;
+            display: flex;
+            align-items: center;
+            height: calc(190px - 4em);
+        }
+
+        section#sobre .card .card-content .icon img{
+            max-width: 60px;
+        }
+        
+        section#sobre .card .card-content .paragrafo{
+            padding-left: 1em;
+        }
+        
+        section#sobre .card .card-content .paragrafo .titulo{
+            text-align: left;
+            font-size: 1.5em;
+        }
+        
+        section#sobre .card .card-content .paragrafo p{
+            color: #777;
+            line-height: 1.4em;
+            margin-top: .7em;
+        }
+    /* #endregion*/
+    
+    /* #region section #contato */
+        section#contato{
+            background: url("../img/bg-contact.jpg") left 100% no-repeat;
+            background-size: cover;
+        }
+        section#contato .content{
+            padding: 3em 0;
+            text-align: center;
+        }
+        section#contato .content .titulo{
+            font-size: 2.5em;
+            color: #fff;
+            font-weight: 300;
+        }
+        section#contato .content p{
+            width: 50%;
+            font-size: 1.1em;
+            color: #fff;
+            line-height: 2em;
+            font-weight: 400;
+            margin: 2em auto;
+        }
+        section#contato .content a.btn{
+            font-size: .9em;
+            font-weight: 600;
+            letter-spacing: .1em;
+            padding: 1em 2em !important;
+        }
+    /* #endregion*/
+
+/* #endregion*/
