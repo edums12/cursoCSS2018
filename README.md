@@ -1,2 +1,2 @@
 # cursoCSS2018
-Curso de CSS, voltado para alunos da Ulbra
+Curso de CSS, voltado para alunos da Ulbra.
